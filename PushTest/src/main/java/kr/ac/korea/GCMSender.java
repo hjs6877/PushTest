@@ -1,15 +1,11 @@
 package kr.ac.korea;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.http.HttpEntity;
-import org.apache.http.StatusLine;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
 import org.json.JSONObject;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -17,7 +13,7 @@ import java.net.URL;
  * Created by kjs on 2015-11-23.
  */
 public class GCMSender {
-    public static final String API_KEY = "AIzaSyDV3uCP_9cw05IreXiBe7ur0Q-0oUMSnuI";
+    public static final String API_KEY = "AIzaSyCfsNaSebCdUqttZVN5p84PGVOFS-950Ok";
 
     public static void main(String[] args) {
         if (args.length < 1 || args.length > 2 || args[0] == null) {
